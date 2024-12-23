@@ -1,0 +1,59 @@
+
+html  {
+
+    margin: 0; 
+    padding: 0 ; 
+
+
+}
+ body{
+
+    margin: 0; 
+    padding: 20px ; 
+
+
+}
+.board {
+    position: relative;
+   
+   
+    background-image:url('board/200.png') ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+    margin:  auto; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 400px;
+    height: 400px;
+}
+
+.board .numLett{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0; 
+    pointer-events: none;
+}
+.pieceContainer {
+    
+    display: flex;
+    /* justify-content:center ; */
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.pieceContainer img{
+    
+    width: 96%;
+   
+
+}
+
+.selected {
+    filter: blur(0.3px);
+    background-color: rgba(0, 0, 255, 0.2); /* Optional: Add a slight background tint */
+   
+}
